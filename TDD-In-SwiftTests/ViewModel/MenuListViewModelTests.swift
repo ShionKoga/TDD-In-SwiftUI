@@ -8,7 +8,7 @@ class MenuListViewModelTests: XCTestCase {
     
     func testWhenFetchinStartsPublishesEmptyMenu() throws {
         let viewModel = MenuList.ViewModel(
-            menuFetching: MenuFetchingPlaceholder()
+            menuFetching: MenuFetchingStub(returning: .success([]))
         )
         
         
