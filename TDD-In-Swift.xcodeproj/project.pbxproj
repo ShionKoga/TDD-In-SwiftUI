@@ -24,6 +24,8 @@
 		113C35752997CB45009D9010 /* MenuList+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C35742997CB45009D9010 /* MenuList+ViewModel.swift */; };
 		113C35782997D0C8009D9010 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C35772997D0C8009D9010 /* MenuFetching.swift */; };
 		113C357A2997D15A009D9010 /* MenuFetchingPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C35792997D15A009D9010 /* MenuFetchingPlaceholder.swift */; };
+		113C357C2997D8D8009D9010 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C357B2997D8D8009D9010 /* MenuFetchingStub.swift */; };
+		113C357E2997DC9A009D9010 /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C357D2997DC9A009D9010 /* TestError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		113C35742997CB45009D9010 /* MenuList+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuList+ViewModel.swift"; sourceTree = "<group>"; };
 		113C35772997D0C8009D9010 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
 		113C35792997D15A009D9010 /* MenuFetchingPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingPlaceholder.swift; sourceTree = "<group>"; };
+		113C357B2997D8D8009D9010 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
+		113C357D2997DC9A009D9010 /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 				113C35432997951B009D9010 /* MenuGroupingTests.swift */,
 				113C35682997C3E9009D9010 /* MenuRowViewModelTests.swift */,
 				113C35722997C950009D9010 /* MenuListViewModelTests.swift */,
+				113C357B2997D8D8009D9010 /* MenuFetchingStub.swift */,
 			);
 			path = "TDD-In-SwiftTests";
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			children = (
 				113C35662997C2FA009D9010 /* MenuSection+Fixture.swift */,
 				113C35642997BF31009D9010 /* MenuItem+Fixture.swift */,
+				113C357D2997DC9A009D9010 /* TestError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,8 +298,10 @@
 			files = (
 				113C35442997951B009D9010 /* MenuGroupingTests.swift in Sources */,
 				113C35672997C2FA009D9010 /* MenuSection+Fixture.swift in Sources */,
+				113C357C2997D8D8009D9010 /* MenuFetchingStub.swift in Sources */,
 				113C35692997C3E9009D9010 /* MenuRowViewModelTests.swift in Sources */,
 				113C35652997BF31009D9010 /* MenuItem+Fixture.swift in Sources */,
+				113C357E2997DC9A009D9010 /* TestError.swift in Sources */,
 				113C35732997C950009D9010 /* MenuListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
