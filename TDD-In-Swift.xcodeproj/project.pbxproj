@@ -126,12 +126,10 @@
 		113C35422997951B009D9010 /* TDD-In-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				113C35822997E870009D9010 /* Fetching */,
+				113C35812997E85F009D9010 /* ViewModel */,
 				113C35712997C927009D9010 /* Model */,
 				113C35432997951B009D9010 /* MenuGroupingTests.swift */,
-				113C35682997C3E9009D9010 /* MenuRowViewModelTests.swift */,
-				113C35722997C950009D9010 /* MenuListViewModelTests.swift */,
-				113C357B2997D8D8009D9010 /* MenuFetchingStub.swift */,
-				113C357F2997E659009D9010 /* MenuItemTests.swift */,
 			);
 			path = "TDD-In-SwiftTests";
 			sourceTree = "<group>";
@@ -166,6 +164,7 @@
 		113C35712997C927009D9010 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				113C357F2997E659009D9010 /* MenuItemTests.swift */,
 				113C35662997C2FA009D9010 /* MenuSection+Fixture.swift */,
 				113C35642997BF31009D9010 /* MenuItem+Fixture.swift */,
 				113C357D2997DC9A009D9010 /* TestError.swift */,
@@ -178,6 +177,23 @@
 			children = (
 				113C35772997D0C8009D9010 /* MenuFetching.swift */,
 				113C35792997D15A009D9010 /* MenuFetchingPlaceholder.swift */,
+			);
+			path = Fetching;
+			sourceTree = "<group>";
+		};
+		113C35812997E85F009D9010 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				113C35682997C3E9009D9010 /* MenuRowViewModelTests.swift */,
+				113C35722997C950009D9010 /* MenuListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		113C35822997E870009D9010 /* Fetching */ = {
+			isa = PBXGroup;
+			children = (
+				113C357B2997D8D8009D9010 /* MenuFetchingStub.swift */,
 			);
 			path = Fetching;
 			sourceTree = "<group>";
