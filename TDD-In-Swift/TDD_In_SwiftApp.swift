@@ -5,7 +5,9 @@ struct TDD_In_SwiftApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                MenuList(viewModel: .init(menu: menu))
+                MenuList(viewModel: .init(
+                    menuFetching: MenuFetchingPlaceholder()
+                ))
                     .navigationTitle("Alberto's🇮🇹")
             }
         }
