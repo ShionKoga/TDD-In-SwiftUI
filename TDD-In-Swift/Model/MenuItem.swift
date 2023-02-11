@@ -1,5 +1,3 @@
-
-
 struct MenuItem {
     let category: String
     let name: String
@@ -9,3 +7,5 @@ struct MenuItem {
 extension MenuItem: Identifiable {
     var id: String { name }
 }
+
+extension MenuItem: Equatable {}
