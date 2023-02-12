@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MenuList: View {
     @ObservedObject var viewModel: ViewModel
+    @EnvironmentObject var orderController: OrderController
         
     var body: some View {
         switch viewModel.sections {
@@ -10,7 +11,11 @@ struct MenuList: View {
                 ForEach(sections) { section in
                     Section(section.category) {
                         ForEach(section.items) { item in
-                            MenuRow(viewModel: .init(item: item))
+                            NavigationLink {
+                                destination(for: item)
+                            } label: {
+                                MenuRow(viewModel: .init(item: item))
+                            }
                         }
                     }
                 }
@@ -20,6 +25,10 @@ struct MenuList: View {
             Text(error.localizedDescription).italic()
         }
     }
+    
+    func destination(for item: MenuItem) -> MenuItemDetail {
+        return MenuItemDetail(viewModel: .init(item: item, orderController: orderController))
+    }
 }
 
 struct MenuList_Previews: PreviewProvider {
@@ -27,5 +36,6 @@ struct MenuList_Previews: PreviewProvider {
         MenuList(viewModel: .init(
             menuFetching: MenuFetcher()
         ))
+        .environmentObject(OrderController())
     }
 }

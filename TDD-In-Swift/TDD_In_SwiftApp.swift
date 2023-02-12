@@ -2,6 +2,8 @@ import SwiftUI
 
 @main
 struct TDD_In_SwiftApp: App {
+    let orderController = OrderController()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
@@ -10,6 +12,7 @@ struct TDD_In_SwiftApp: App {
                 ))
                     .navigationTitle("Alberto's🇮🇹")
             }
+            .environmentObject(orderController)
         }
     }
 }

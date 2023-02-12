@@ -5,12 +5,14 @@ extension MenuItem {
     static func fixture(
         category: String = "",
         name: String = "",
-        spicy: Bool = false
+        spicy: Bool = false,
+        price: Double = 0
     ) -> MenuItem {
         return MenuItem(
             category: category,
             name: name,
-            spicy: spicy
+            spicy: spicy,
+            price: price
         )
     }
 }
