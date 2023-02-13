@@ -6,11 +6,14 @@ struct TDD_In_SwiftApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                MenuList(viewModel: .init(
-                    menuFetching: MenuFetcher()
-                ))
+            ZStack(alignment: .bottom) {
+                NavigationView {
+                    MenuList(viewModel: .init(
+                        menuFetching: MenuFetcher()
+                    ))
                     .navigationTitle("Alberto's🇮🇹")
+                }
+                OrderButton(viewModel: .init())
             }
             .environmentObject(orderController)
         }
